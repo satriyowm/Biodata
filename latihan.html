@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+  <h2>BIODATA</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+		 <img src="foto.jpg" alt="Satriyo"style="width:150px;height:200px;">
+         
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Satriyo Watana Ma'arif</h1>
+    <p>Nama panggilan saya Satriyo, saya berdomisili di Depok Jawa Barat, berkuliah di Universitas Pancasila Jakarta. Saya mengikuti program SEAL untuk bertujuan mempelajari dan mendalami UI/UX DESIGNER.</p>
+    <p> Saya mempunyai hobi
+    	<li><a>Travelling</a></li>
+      	<li><a>Mendaki</a></li>
+      	<li><a>Bermain bola</a></li>
+        <li><a>Berenang</a></li>
+        </p>
+  </article>
+</section>
+
+<footer>
+    <li><a target="_blank" href="https://instagram.com/satriyo.wm"><img src="ins.png" width="35px" height="35px"></a></li>
+</footer>
+
+</body>
+</html>
+
